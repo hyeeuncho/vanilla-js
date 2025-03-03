@@ -22,7 +22,6 @@ const saveUserName = localStorage.getItem(USERNAME_KEY);
 if (saveUserName == null){
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
-    
 } else {
     paintGreetings(saveUserName);
 }
