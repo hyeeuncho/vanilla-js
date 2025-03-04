@@ -13,12 +13,6 @@ img{
     opacity: 80%;
     object-fit: cover;
 }
-#login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
 #quote {
     margin-top: 20px;
 }

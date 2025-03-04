@@ -9,11 +9,13 @@ function onLoginSubmit(event){
     event.preventDefault();
     const username = loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    console.dir(loginForm);
     localStorage.setItem(USERNAME_KEY,username);
     paintGreetings(username);
 }
 
 function paintGreetings(username){
+    loginForm.classList.add(HIDDEN_CLASSNAME);
     greeting.classList.remove(HIDDEN_CLASSNAME);
     greeting.innerText = `Hello ${username}`;
 }
